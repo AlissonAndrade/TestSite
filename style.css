@@ -8,27 +8,35 @@
         margin: 0px;
         padding: 0px;
         font-family: Merienda, sans-serif, 'Times New Roman';
-        background-color: hsla(219, 86%, 34%, 0.74);
-        transition: ease 0.1s;
+        background-image: url('imgs/img-def.jpg');
+        background-position: inherit;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
+        position: fixed;
         margin: auto;
-        background-image: linear-gradient(to bottom, hsla(204, 100%, 50%, 0.822), hsla(220, 100%, 50%, 0.808));
     }
 
     header{
         height: 7rem;
         width: 100%;
-        background-color: whitesmoke;
+        background-color: greenyellow;
     }
 
-    .gomuimg{
-        height: 6rem;
-        width: 6rem;
+    .logotipo{
+        height: 4rem;
+        width: 4.5rem;
         padding: 10px;
     }
 
 }
 
-@media (min-width: 500px){
+@media (min-width: 0px){
+
+    body{
+        background-image: url('imgs/img-def-small.png');
+        position: fixed;
+    }
 
     nav{
         display: none;
@@ -144,6 +152,12 @@
 }
 
 @media (min-width: 1024px){
+
+    body{
+        background-image: url('imgs/img-def-1024.png');
+        position: fixed;
+    }
+
     .menu{
         display: none;
     }
@@ -158,9 +172,8 @@
     }
 
     .contentHead{
-        height: 100%;
+        height: 7rem;
         width: 100%;
-        height: fit-content;
         width: 100%;
         display: flex;
         flex-direction: row;
